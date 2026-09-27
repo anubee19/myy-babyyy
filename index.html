@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Myy Babyyyy ❤️</title>
+
+<style>
+
+/* =========================
+   BASIC PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 20% 20%, #fff8fb, transparent 30%),
+        radial-gradient(circle at 80% 30%, #ffe8f1, transparent 35%),
+        linear-gradient(135deg, #ffe4ed, #fff4f7, #ffdce8);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #6b3045;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   FLOATING BACKGROUND
+========================= */
+
+.floating {
+    position: fixed;
+
+    bottom: -80px;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    animation: floatUp linear infinite;
+}
+
+
+/* Hearts */
+
+.heart {
+    font-size: 25px;
+}
+
+
+/* Butterflies */
+
+.butterfly {
+    font-size: 30px;
+}
+
+
+/* Love signs */
+
+.love-sign {
+    font-size: 24px;
+}
+
+
+/* Sparkles */
+
+.sparkle {
+    font-size: 20px;
+}
+
+
+/* Different positions */
+
+.f1 {
+    left: 5%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.f2 {
+    left: 15%;
+    animation-duration: 14s;
+    animation-delay: 3s;
+}
+
+.f3 {
+    left: 27%;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.f4 {
+    left: 40%;
+    animation-duration: 15s;
+    animation-delay: 5s;
+}
+
+.f5 {
+    left: 55%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.f6 {
+    left: 68%;
+    animation-duration: 16s;
+    animation-delay: 6s;
+}
+
+.f7 {
+    left: 80%;
+    animation-duration: 13s;
+    animation-delay: 4s;
+}
+
+.f8 {
+    left: 92%;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}
+
+
+@keyframes floatUp {
+
+    0% {
+        transform:
+            translateY(0)
+            translateX(0)
+            rotate(0deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    30% {
+        transform:
+            translateY(-30vh)
+            translateX(30px)
+            rotate(10deg)
+            scale(1);
+    }
+
+    55% {
+        transform:
+            translateY(-60vh)
+            translateX(-35px)
+            rotate(-10deg)
+            scale(1.05);
+    }
+
+    80% {
+        transform:
+            translateY(-85vh)
+            translateX(30px)
+            rotate(15deg)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translateY(-115vh)
+            translateX(-20px)
+            rotate(-10deg)
+            scale(0.7);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   EXTRA FLOATING BUTTERFLIES
+========================= */
+
+.butterfly-float {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    animation: butterflyMove 7s ease-in-out infinite;
+}
+
+.b1 {
+    top: 15%;
+    left: -50px;
+    animation-delay: 0s;
+}
+
+.b2 {
+    top: 45%;
+    right: -50px;
+    animation-delay: 3s;
+}
+
+.b3 {
+    top: 70%;
+    left: -50px;
+    animation-delay: 5s;
+}
+
+
+@keyframes butterflyMove {
+
+    0% {
+        transform:
+            translateX(0)
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform:
+            translateX(50vw)
+            translateY(-60px)
+            rotate(12deg);
+    }
+
+    80% {
+        transform:
+            translateX(85vw)
+            translateY(40px)
+            rotate(-12deg);
+    }
+
+    100% {
+        transform:
+            translateX(110vw)
+            translateY(-20px)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   ENVELOPE SCREEN
+========================= */
+
+#envelopeScreen {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fffafd 0%,
+            #ffeaf2 45%,
+            #ffd9e6 100%
+        );
+
+    z-index: 100;
+}
+
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope-container {
+
+    position: relative;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+
+@keyframes gentleFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+#envelope {
+
+    width: 290px;
+
+    height: 190px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f6b0c5,
+            #ed9db7
+        );
+
+    border-radius: 12px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 20px 50px rgba(100, 30, 60, 0.22);
+
+    transition:
+        transform 0.4s,
+        box-shadow 0.4s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+#envelope:hover {
+
+    transform: scale(1.06);
+
+    box-shadow:
+        0 25px 65px rgba(150, 40, 80, 0.28);
+}
+
+
+/* Envelope fold */
+
+#envelope::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 145px solid transparent;
+    border-right: 145px solid transparent;
+
+    border-bottom: 105px solid rgba(255,255,255,0.12);
+}
+
+
+/* Envelope top */
+
+#envelope::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 145px solid transparent;
+    border-right: 145px solid transparent;
+
+    border-top: 105px solid #e995b0;
+}
+
+
+.heart-seal {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+
+    box-shadow:
+        0 8px 20px rgba(100,30,60,0.18);
+
+    animation: heartbeat 1.6s infinite;
+}
+
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+
+.tap {
+
+    margin-top: 28px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 30px;
+
+    color: #8d3d59;
+
+    animation: textGlow 2s infinite;
+
+    cursor: pointer;
+}
+
+
+@keyframes textGlow {
+
+    0%, 100% {
+        opacity: 0.65;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.small-text {
+
+    margin-top: 8px;
+
+    font-size: 16px;
+
+    color: #9d6678;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+#letter {
+
+    display: none;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 60px 15px;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.card {
+
+    width: 90%;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 50px 40px;
+
+    background:
+        rgba(255,255,255,0.92);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 70px rgba(100,30,60,0.16);
+
+    border:
+        1px solid rgba(255,255,255,0.9);
+
+    animation: cardAppear 1.2s ease;
+
+}
+
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(40px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+
+    margin-top: 0;
+
+    text-align: center;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 55px;
+
+    color: #a33e60;
+
+    text-shadow:
+        0 5px 20px rgba(160,50,90,0.15);
+
+    animation: titleGlow 3s infinite;
+}
+
+
+@keyframes titleGlow {
+
+    0%, 100% {
+        text-shadow:
+            0 5px 20px rgba(160,50,90,0.12);
+    }
+
+    50% {
+        text-shadow:
+            0 5px 30px rgba(200,70,120,0.35);
+    }
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #9a6071;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+
+    text-align: center;
+
+    font-size: 20px;
+
+    line-height: 1.85;
+}
+
+
+.message p {
+
+    margin: 25px 0;
+}
+
+
+.divider {
+
+    margin: 30px 0;
+
+    text-align: center;
+
+    font-size: 25px;
+
+    color: #d46d91;
+
+    letter-spacing: 10px;
+}
+
+
+.big-love {
+
+    margin: 35px 0;
+
+    font-size: 40px;
+
+    color: #b43f65;
+
+    text-align: center;
+
+    animation:
+        lovePulse 2s infinite;
+}
+
+
+@keyframes lovePulse {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+
+.signature {
+
+    margin-top: 40px;
+
+    text-align: right;
+
+    font-size: 34px;
+
+    font-family:
+        Georgia,
+        serif;
+
+    color: #a33e60;
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+#musicButton {
+
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 200;
+
+    box-shadow:
+        0 8px 25px rgba(100,30,60,0.2);
+
+    transition: 0.3s;
+}
+
+
+#musicButton:hover {
+
+    transform: scale(1.12);
+}
+
+
+#musicButton.playing {
+
+    animation:
+        musicPulse 1.5s infinite;
+}
+
+
+@keyframes musicPulse {
+
+    0%, 100% {
+        box-shadow:
+            0 8px 25px rgba(100,30,60,0.18);
+    }
+
+    50% {
+        box-shadow:
+            0 8px 35px rgba(210,70,120,0.45);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    #envelope {
+
+        width: 250px;
+
+        height: 165px;
+    }
+
+    #envelope::before {
+
+        border-left-width: 125px;
+        border-right-width: 125px;
+    }
+
+    #envelope::after {
+
+        border-left-width: 125px;
+        border-right-width: 125px;
+    }
+
+    .card {
+
+        width: 94%;
+
+        padding:
+            40px 22px;
+    }
+
+    h1 {
+
+        font-size: 43px;
+    }
+
+    .subtitle {
+
+        font-size: 18px;
+    }
+
+    .message {
+
+        font-size: 18px;
+
+        line-height: 1.8;
+    }
+
+    .big-love {
+
+        font-size: 32px;
+    }
+
+    .signature {
+
+        font-size: 29px;
+    }
+
+    .tap {
+
+        font-size: 27px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     FLOATING HEARTS
+========================= -->
+
+<div class="floating heart f1">❤️</div>
+<div class="floating heart f2">💕</div>
+<div class="floating heart f3">💗</div>
+<div class="floating heart f4">💖</div>
+
+<div class="floating love-sign f5">💘</div>
+<div class="floating love-sign f6">💞</div>
+
+<div class="floating sparkle f7">✨</div>
+<div class="floating sparkle f8">💫</div>
+
+
+<!-- =========================
+     MOVING BUTTERFLIES
+========================= -->
+
+<div class="butterfly-float b1">
+    🦋
+</div>
+
+<div class="butterfly-float b2">
+    🦋
+</div>
+
+<div class="butterfly-float b3">
+    🦋
+</div>
+
+
+<!-- =========================
+     ENVELOPE
+========================= -->
+
+<div id="envelopeScreen">
+
+    <div class="envelope-container">
+
+        <div
+            id="envelope"
+            onclick="openLetter()"
+        >
+
+            <div class="heart-seal">
+                ❤️
+            </div>
+
+        </div>
+
+
+        <div
+            class="tap"
+            onclick="openLetter()"
+        >
+            Tap to open 💌
+        </div>
+
+
+        <div class="small-text">
+            I have something to tell you... 🌸
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     LETTER
+========================= -->
+
+<div id="letter">
+
+    <div class="card">
+
+        <h1>
+            Myy Babyyyy ❤️
+        </h1>
+
+
+        <div class="subtitle">
+            A little something from my heart to yours 🌸
+        </div>
+
+
+        <div class="divider">
+            ♡ ♥ ♡
+        </div>
+
+
+        <div class="message">
+
+            <p>
+                I lovee youuu babyyyy ❤️
+            </p>
+
+
+            <p>
+                Thank youu for making my lifee colourful again... 🌸
+            </p>
+
+
+            <p>
+                And the most beautiful part is...
+                that happened automatically with your presence. ❤️
+            </p>
+
+
+            <p>
+                You came into my life and somehow everything
+                started feeling a little brighter, a little warmer,
+                and a lot more beautiful.
+            </p>
+
+
+            <p>
+                I don't even know how you do it...
+                But you just have this way of making ordinary
+                moments feel special.
+            </p>
+
+
+            <div class="big-love">
+                I love you to the moon and back 🌙❤️
+            </div>
+
+
+            <p>
+                With you, I feel like I don't even need to say
+                how I am feeling.
+            </p>
+
+
+            <p>
+                You just get to know.
+            </p>
+
+
+            <p>
+                Somehow, you understand what I am feeling through
+                my actions, my expressions, or even just a few words.
+            </p>
+
+
+            <p>
+                Sometimes I don't even have to say what's going
+                on in my head...
+                You just know. 🥹❤️
+            </p>
+
+
+            <p>
+                I absolutely adore how perceptive you are.
+            </p>
+
+
+            <p>
+                You notice the little things.
+                You understand the things I don't say.
+                You somehow pick up on the smallest changes in me.
+            </p>
+
+
+            <p>
+                And the fact that you can understand me even when
+                I'm not able to put my feelings into words...
+                means more to me than you know. ❤️
+            </p>
+
+
+            <p>
+                It makes me feel understood.
+                It makes me feel comfortable.
+                And most importantly...
+                it makes me feel like I can simply be myself with you.
+            </p>
+
+
+            <p>
+                Thank you for being you.
+                Thank you for coming into my life.
+                And thank you for bringing so much colour back into it.
+            </p>
+
+
+            <p>
+                I hope you always know how special you are to me.
+            </p>
+
+
+            <div class="big-love">
+                I love youuu sooooo much ❤️
+            </div>
+
+
+        </div>
+
+
+        <div class="divider">
+            ♡ ♥ ♡
+        </div>
+
+
+       <div class="signature">
+    Forever yours, ❤️<br>
+    Aaru ✨
+</div>
+
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio
+    id="music"
+    loop
+    preload="auto"
+>
+
+    <source
+        src="perfect.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+<button
+    id="musicButton"
+    onclick="toggleMusic()"
+>
+    🎵
+</button>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+let musicStarted = false;
+
+
+/* OPEN LETTER */
+
+function openLetter() {
+
+    document.getElementById(
+        "envelopeScreen"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "letter"
+    ).style.display = "block";
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+
+    startMusic();
+
+}
+
+
+/* START MUSIC */
+
+function startMusic() {
+
+    if (musicStarted) {
+        return;
+    }
+
+    const music =
+        document.getElementById("music");
+
+    const button =
+        document.getElementById("musicButton");
+
+
+    music.volume = 0;
+
+
+    music.play()
+        .then(function() {
+
+            musicStarted = true;
+
+            button.innerHTML = "🎵";
+
+            button.classList.add(
+                "playing"
+            );
+
+
+            /* Soft fade-in */
+
+            let volume = 0;
+
+            const fade =
+                setInterval(function() {
+
+                    if (volume < 0.35) {
+
+                        volume += 0.02;
+
+                        music.volume =
+                            Math.min(
+                                volume,
+                                0.35
+                            );
+
+                    } else {
+
+                        clearInterval(fade);
+
+                    }
+
+                }, 100);
+
+        })
+        .catch(function() {
+
+            button.innerHTML = "▶️";
+
+        });
+
+}
+
+
+/* MUSIC BUTTON */
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById("music");
+
+    const button =
+        document.getElementById("musicButton");
+
+
+    if (music.paused) {
+
+        music.play();
+
+        button.innerHTML = "🎵";
+
+        button.classList.add(
+            "playing"
+        );
+
+    }
+
+    else {
+
+        music.pause();
+
+        button.innerHTML = "🔇";
+
+        button.classList.remove(
+            "playing"
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
